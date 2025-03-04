@@ -72,6 +72,8 @@
             var InputNumber = parseInt(document.getElementById('InputNumber').value);
             var selectedOption = document.getElementById('option_select').value;
             var Result = document.getElementById('Result');
+            document.getElementById('Result').style.color = 'blue';
+
 
             if (isNaN(InputNumber)) {
                 Result.innerHTML = "Please enter a valid number!";
@@ -80,6 +82,7 @@
 
             if (selectedOption === "1") {
                 Result.innerHTML = EvenorOdd(InputNumber);
+
             } else if (selectedOption === "2") {
                 Result.innerHTML = isPalindrome(InputNumber) ? "Palindrome Number" : "Not a Palindrome";
             } else if (selectedOption === "3") {
